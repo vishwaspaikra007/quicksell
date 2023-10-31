@@ -1,0 +1,43 @@
+.cardBody {
+    width: 400px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: auto;
+    margin-top: 30px;
+    border: 2px solid #e6e8eb;
+    display: grid;
+    grid-template-columns: auto 40px;
+}
+
+.cam {
+    color: #6b6f76;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.taskBlock {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.statusImg {
+    padding: 3px 7px 0px 0px;
+    height: 20px;
+}
+
+
+.title {
+    font-weight: 500;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.userImg {
+    height: 35px;
+    border-radius: 50%;
+}
