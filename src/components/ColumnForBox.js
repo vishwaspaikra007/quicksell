@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import Cards from './Cards'
 import "./ColumnForBox.css"
 
+import add from "../assets/icons/add.png"
+
 import done from '../assets/icons/done.svg'
 import inprogress from '../assets/icons/inprogress.png'
 import backlog from '../assets/icons/backlog.svg'
@@ -72,8 +74,13 @@ export default function ColumnForBox(props) {
     <div className='ColumnForBox'>
         
         <div className='head'>
-          {hide == "user" ? <UserDp src={img in imagesSrc ? imagesSrc[img] : imagesSrc["usr-default"]} available={available} style={{transform: "scale(0.6)"}} /> : <img src={imagesSrc[img]}/>}
+          {hide == "user" ? 
+            <UserDp src={img in imagesSrc ? imagesSrc[img] : imagesSrc["usr-default"]} available={available} style={{transform: "scale(0.6)"}} /> : 
+            <img src={imagesSrc[img]}/>}
           <span>{title}</span>
+          <span className='num'>{list.length}</span>
+          <img className="add" src={add} />
+          <img src={nopriority} />
         </div>
 
         {
