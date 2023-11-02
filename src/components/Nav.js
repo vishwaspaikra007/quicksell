@@ -44,7 +44,7 @@ export default function Nav() {
 
 
     useEffect(() => {
-        console.log("location change")
+        console.log("location change", location)
         setGroupBy(getPath())
         setOrderBy(getParams())
         return () => {

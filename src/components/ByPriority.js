@@ -14,7 +14,7 @@ export default function ByPriority(props) {
   return (
     <>
       {
-        Object.keys(groupByPriorityObj).map((key, index) => {
+        Object && Object.keys(groupByPriorityObj).map((key, index) => {
           return <ColumnForBox key={index} title={priority[key]} img={priority[key]} data={groupByPriorityObj[key]}  hide="priority"/>
         })
       }

@@ -1,3 +1,7 @@
+.Nav {
+    height: 60px;
+    display: inline-block;
+}
 .Nav button {
     background-color: white;
     border-radius: 10px;

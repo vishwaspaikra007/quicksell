@@ -8,7 +8,7 @@ export default function ByUser(props) {
     <>
       {
         groupByUsrObj ?
-        Object.keys(groupByUsrObj).map((key, index) => {
+        Object && Object.keys(groupByUsrObj).map((key, index) => {
           return <ColumnForBox key={index} title={names[key].name} img={key} data={groupByUsrObj[key]} hide="user" available={names[key].available}/>
         }) : ""
       }

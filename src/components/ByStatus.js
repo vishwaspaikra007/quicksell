@@ -8,7 +8,7 @@ export default function ByStatus(props) {
     <>
       {
         groupByStatusObj ?
-        Object.keys(groupByStatusObj).map((key, index) => {
+        Object && Object.keys(groupByStatusObj).map((key, index) => {
           return <ColumnForBox key={index} title={key} img={key} data={groupByStatusObj[key]} hide="status"/>
         }) : ""
       }

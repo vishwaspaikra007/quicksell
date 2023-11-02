@@ -103,10 +103,11 @@ function App() {
       <Nav />
       <div className="body">
       <Routes>
-        {/* <Route path='/' element={<Navigate to={'/groupByPriority'} />} /> */}
+        <Route path='/' element={<Navigate to={'/groupByUser/orderByTitle'} />} />
         <Route path='/groupByStatus/:order' element={<ByStatus groupByStatusObj={groupByStatusObj} />} />
         <Route path='/groupByPriority/:order' element={<ByPriority groupByPriorityObj={groupByPriorityObj} />} />
         <Route path='/groupByUser/:order' element={<ByUser groupByUsrObj={groupByUsrObj} names={names} />} />
+        <Route path="/*" element={<Navigate to="/groupByUser/orderByTitle " />} />
       </Routes>
       </div>
     </div>
