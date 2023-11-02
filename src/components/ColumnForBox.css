@@ -1,0 +1,18 @@
+.ColumnForBox {
+    width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.ColumnForBox .head {
+    display: flex;
+    align-items: center;
+}
+
+.ColumnForBox .head img {
+    /* border-radius: 50%; */
+    height: 20px;
+    margin-right: 10px;
+}

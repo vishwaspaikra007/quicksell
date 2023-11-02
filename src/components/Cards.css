@@ -1,11 +1,12 @@
+/* #595e66 */
 .cardBody {
-    width: 400px;
+    width: 100%;
     background-color: white;
     border-radius: 10px;
     padding: 20px;
     box-sizing: border-box;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 13px;
     border: 2px solid #e6e8eb;
     display: grid;
     grid-template-columns: auto 40px;
@@ -20,11 +21,11 @@
 .taskBlock {
     margin-top: 10px;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 25px auto;
 }
 
 .statusImg {
-    padding: 3px 7px 0px 0px;
+    padding: 2px 7px 0px 0px;
     height: 20px;
 }
 
@@ -41,3 +42,29 @@
     height: 35px;
     border-radius: 50%;
 }
+ .cardBody .head img {
+    border-radius: 0 !important;
+ }
+
+ .cardBody .tags {
+    display: flex;
+    gap: 3px;
+    margin-top: 10px;
+    opacity: 60%;
+    transform: scale(0.9);
+    margin-left: -11px;
+ }
+
+ .cardBody .tag {
+    display: flex;
+ }
+
+ .cardBody .tag span {
+    background-color: gray;
+    width: 14px;
+    height: 14px;
+    margin-top: 4px;
+    margin-right: 5px;
+    display: block;
+    border-radius: 50%;
+ }

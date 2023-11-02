@@ -1,0 +1,57 @@
+.Nav button {
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid #e6e8eb;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.Nav button:focus {
+    outline: none;
+}
+
+.Nav button:active {
+    transform: scale(0.9);
+}
+
+.Nav button span {
+    margin: 0 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.Nav button img {
+    height: 20px;
+} 
+
+.Nav button img:last-child {
+    height: 12px;
+}
+
+.NavBody {
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #e6e8eb;
+    width: fit-content;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: gray;
+    gap: 15px;
+    position: absolute;
+    background-color: white;
+    position: absolute;
+    z-index: 2;
+}
+
+
+.NavBody select {
+    margin-left: 60px;
+    padding: 5px 10px;
+}
